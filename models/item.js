@@ -13,7 +13,7 @@ const ItemSchema = new Schema({
 
 // Virtual for item's status
 ItemSchema.virtual("status").get(function () {
-    const status = '';
+    let status = '';
     
     if (this.number_in_stock <= 0) {
         status = 'Out of stock'

@@ -1,0 +1,9 @@
+extends layout 
+
+block content 
+    h1= title 
+
+    p #{item.description}
+    p $#{item.price}.00
+    p #{item.number_in_stock}
+    p #{item.hexcode}

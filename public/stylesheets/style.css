@@ -1,8 +1,26 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 150%;
+
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid rgb(234, 234, 234);
 }
