@@ -14,16 +14,16 @@ router.get("/item/create", item_controller.item_create_get);
 router.post("/item/create", item_controller.item_create_post);
 
 // get request for deleting item
-router.get("/item/delete", item_controller.item_delete_get);
+router.get("/item/:id/delete", item_controller.item_delete_get);
 
 // post request for deleting item
-router.post("/item/delete", item_controller.item_delete_post);
+router.post("/item/:id/delete", item_controller.item_delete_post);
 
 // get request for updating item
-router.get("/item/update", item_controller.item_update_get);
+router.get("/item/:id/update", item_controller.item_update_get);
 
 // post request for updating item
-router.post("/item/update", item_controller.item_update_post);
+router.post("/item/:id/update", item_controller.item_update_post);
 
 // get request for one item
 router.get("/item/:id", item_controller.item_detail);
@@ -42,16 +42,16 @@ router.get("/category/create", category_controller.category_create_get);
 router.post("/category/create", category_controller.category_create_post);
 
 // get request for deleting category
-router.get("/category/delete", category_controller.category_delete_get);
+router.get("/category/:id/delete", category_controller.category_delete_get);
 
 // post request for deleting category
-router.post("/category/delete", category_controller.category_delete_post);
+router.post("/category/:id/delete", category_controller.category_delete_post);
 
 // get request for updating category
-router.get("/category/update", category_controller.category_update_get);
+router.get("/category/:id/update", category_controller.category_update_get);
 
 // post request for updating category
-router.post("/category/update", category_controller.category_update_post);
+router.post("/category/:id/update", category_controller.category_update_post);
 
 // get request for one category
 router.get("/category/:id", category_controller.category_detail);

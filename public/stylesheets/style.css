@@ -17,10 +17,55 @@ body {
   list-style: none;
 }
 
+.form-group {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 16px 0;
+}
+
+label {
+  margin-bottom: 4px;
+}
+
+.form-control {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 18px;
+  height: 40px;
+  margin: 0;
+  padding: 0 8px 0 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: #cc0033;
+  font-size: 16px;
+  margin-top: 4px;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 hr {
   border: 1px solid rgb(234, 234, 234);
+}
+
+.btn {
+
+  height: 40px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(84, 105, 212);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 16px;
+
 }

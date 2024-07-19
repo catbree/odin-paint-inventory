@@ -3,7 +3,15 @@ extends layout
 block content 
     h1= title 
 
-    p #{item.description}
-    p $#{item.price}.00
-    p #{item.number_in_stock}
-    p #{item.hexcode}
+    p #[strong Description: ] #{item.description}
+    p #[strong Category: ]
+        each val, index in item.category
+            span #{val.name}
+            if index < item.category.length - 1
+                |,&nbsp;
+    p #[strong Price: ]$#{item.price}.00
+    p #[strong Number in stock: ]#{item.number_in_stock}
+    p #[strong Hexcode: ]#{item.hexcode}
+
+    a(href=`${item.url}/update`) Update item
+    a(href=`${item.url}/delete`) Delete item
